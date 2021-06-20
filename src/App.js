@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
+import Employer from './components/Employer/Employer/Employer'
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path='/employer'>
-          <Home />
+          <Employer />
         </Route>
         <Route exact path='/job-seeker'>
           <Home />

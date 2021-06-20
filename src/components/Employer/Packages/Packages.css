@@ -1,0 +1,9 @@
+.pack-style {
+    border-bottom: 2px groove cyan;
+}
+
+.pack-container {
+    border: 1px solid grey;
+    margin: 0 8%;
+    padding: 10% 0;
+}
