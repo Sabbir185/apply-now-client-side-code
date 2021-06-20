@@ -1,0 +1,25 @@
+.color {
+    color: rgb(99, 97, 97);
+    font-weight: 500;
+    transition: all .2s ease-out;
+}
+.color:hover {
+    color: black;
+    transform: translate(-3);
+}
+
+.logo {
+    color: black;
+    font-weight: 700;
+}
+
+.user {
+    background-color: lightblue;
+    border-radius: 100px;
+    padding: 5px;
+    border: 1px dotted tomato;
+    color: green;
+}
+.user:hover {
+    color: black;
+}
