@@ -2,7 +2,7 @@
     border-bottom: 2px solid cyan;
 }
 
-h5:hover {
+.package-add:hover {
     background-color: lightgray;
     border-radius: 100px;
     color: hotpink;

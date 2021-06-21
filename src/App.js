@@ -14,6 +14,7 @@ import Profile from './components/Employer/Profile/Profile';
 import EmployerProfile from './components/Employer/EmployerProfile/EmployerProfile';
 import { createContext, useState } from 'react';
 import AddJobPost from './components/Employer/AddJobPost/AddJobPost';
+import DetailsView from './components/Home/DetailsView/DetailsView';
 
 export const UserContext = createContext();
 
@@ -54,6 +55,9 @@ function App() {
           </Route>
           <Route path='/addJobPost'>
             <AddJobPost />
+          </Route>
+          <Route path='/detailsView/:id'>
+            <DetailsView />
           </Route>
 
         </Switch>

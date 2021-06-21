@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
+import { useHistory } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import MainNavbar from '../../Shared/MainNavbar/MainNavbar';
 import Sidebar from '../Sidebar/Sidebar';
@@ -8,7 +9,8 @@ import Sidebar from '../Sidebar/Sidebar';
 const AddJobPost = () => {
     const [userInfo, setUserInfo] = useContext(UserContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
-
+    const history = useHistory();
+    
     const onSubmit = data => {
         const {company, details, skills, title} = data;
         const post = {
@@ -22,7 +24,8 @@ const AddJobPost = () => {
         axios.post('http://localhost:5055/jobPost',post)
         .then(res => {
             if(res){
-                alert('Posted! Please wait for admin review')
+                alert('Posted! Please wait for admin review');
+                history.push('/')
             }
         })
     };
