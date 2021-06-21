@@ -23,3 +23,7 @@
 .user:hover {
     color: black;
 }
+
+.logo img {
+    width: 40px;
+}

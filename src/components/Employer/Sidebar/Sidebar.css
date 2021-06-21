@@ -1,0 +1,22 @@
+.image img {
+    width: 100px;
+    border-radius: 100px;
+    border: 3px dotted cyan;
+    display: block;
+    margin: 10% auto;
+}
+
+
+
+.job-post{
+    padding: 2% 0;
+}
+
+.job-post:hover {
+    background-color: lightgray;
+    border-radius: 100px;
+    color: hotpink;
+    cursor: pointer;
+    margin: 0 7%;
+    padding: 2% 0;
+}

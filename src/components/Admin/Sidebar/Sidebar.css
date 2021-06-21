@@ -1,0 +1,16 @@
+.admin-sidebar h2 > span{
+    border-bottom: 2px solid cyan;
+}
+
+h5:hover {
+    background-color: lightgray;
+    border-radius: 100px;
+    color: hotpink;
+    cursor: pointer;
+    margin: 0 7%;
+}
+
+.admin-sidebar {
+    border-right: 1px solid lightseagreen;
+    height: 50vh;
+}

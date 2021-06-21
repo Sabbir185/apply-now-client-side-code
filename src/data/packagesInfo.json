@@ -1,0 +1,5 @@
+[
+    {"support":"Unlimited Support", "email":"Email Notifications", "hours":10, "plan":"Basic", "cost": 15},
+    {"support":"Unlimited Support", "email":"Email Notifications", "hours":20, "plan":"Standard", "cost": 25},
+    {"support":"Unlimited Support", "email":"Email Notifications", "hours":30, "plan":"Premium", "cost": 35}
+]
