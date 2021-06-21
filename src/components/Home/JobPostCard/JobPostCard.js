@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
+import './JobPostCard.css'
 
 const JobPostCard = (props) => {
     let { adminPermission, company, details, id, skills, title, _id } = props.job;
@@ -16,7 +17,7 @@ const JobPostCard = (props) => {
         <div>
             {
                 adminPermission &&
-                <Card style={{ width: '18rem' }}>
+                <Card style={{ width: '18rem' }} className='post-container'>
                     <Card.Body>
                         <Card.Body>
                             <h6>{title}</h6>

@@ -22,7 +22,7 @@ const JobPost = () => {
     return (
         <section className='container mt-5'>
             <div className='d-flex justify-content-between'>
-                <h4 className='mb-4'>Latest <strong className='text-success'>Job</strong> Post :</h4>
+                <h4 className='mb-4'>Latest <strong className='text-success'>Job</strong> Post : {post.length}</h4>
                 <div>
                     <select name="status" id="" className='form-control' onChange={handleFilter}>
                         <option value="choose" className="text-secondary font-weight-bold">Choose Job</option>
