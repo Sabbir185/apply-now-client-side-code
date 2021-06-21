@@ -19,6 +19,6 @@
 ### Firebase, Heroku, Github, React-Bootstrap
 <br>
 
-## live link : https://sabbir185-apply-now.firebaseapp.com/
+### live link : https://sabbir185-apply-now.firebaseapp.com/
 
-# Server code : https://github.com/Sabbir185/apply-now-server-side-code
+### Server code : https://github.com/Sabbir185/apply-now-server-side-code
