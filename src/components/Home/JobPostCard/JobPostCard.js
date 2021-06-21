@@ -19,8 +19,8 @@ const JobPostCard = (props) => {
                 <Card style={{ width: '18rem', marginRight:'20px' }}>
                     <Card.Body>
                         <Card.Body>
-                            <Card.Title>{title}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Company : {company}</Card.Subtitle>
+                            <h6>{title}</h6>
+                            <Card.Subtitle className="mb-2 mt-3 text-muted">Company : {company}</Card.Subtitle>
                             <Card.Text>
                                 <em>Skill : {skills}</em>
                             </Card.Text>

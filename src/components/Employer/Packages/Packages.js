@@ -16,7 +16,7 @@ const Packages = () => {
     
 
     return (
-        <section>
+        <section className='container'>
             <div className="row">
                 {
                     packData?.map(pack => <PackagesCard package={pack} key={pack._id}></PackagesCard>)

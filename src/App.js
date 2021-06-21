@@ -15,6 +15,8 @@ import EmployerProfile from './components/Employer/EmployerProfile/EmployerProfi
 import { createContext, useState } from 'react';
 import AddJobPost from './components/Employer/AddJobPost/AddJobPost';
 import DetailsView from './components/Home/DetailsView/DetailsView';
+import Login from './components/login/Login/Login';
+import PrivateRoute from './components/login/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -56,8 +58,11 @@ function App() {
           <Route path='/addJobPost'>
             <AddJobPost />
           </Route>
-          <Route path='/detailsView/:id'>
+          <PrivateRoute path='/detailsView/:id'>
             <DetailsView />
+          </PrivateRoute>
+          <Route path='/login'>
+            <Login />
           </Route>
 
         </Switch>
