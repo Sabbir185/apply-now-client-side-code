@@ -13,7 +13,6 @@ const Sidebar = ({ id }) => {
         .catch(err => alert(err))
     },[id])
 
-    console.log(employer)
 
     return (
         <div>
@@ -30,6 +29,10 @@ const Sidebar = ({ id }) => {
             </div>
             <div className='text-center mt-5'>
                 <Link className='text-decoration-none' to='/addJobPost'><h6 className='job-post'>Add Job Post</h6></Link>
+            </div>
+
+            <div className='text-center mt-3'>
+                <Link className='text-decoration-none' to='/view-application'><h6 className='job-post'>View All Application</h6></Link>
             </div>
         </div>
     );

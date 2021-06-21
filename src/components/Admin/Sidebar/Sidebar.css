@@ -2,6 +2,10 @@
     border-bottom: 2px solid cyan;
 }
 
+.package-add {
+    padding: 5px;
+}
+
 .package-add:hover {
     background-color: lightgray;
     border-radius: 100px;

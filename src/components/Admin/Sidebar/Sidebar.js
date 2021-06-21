@@ -7,8 +7,8 @@ const Sidebar = () => {
         <div>
             <div className='text-center mt-5 pt-5 admin-sidebar'>
                 <h2><span>Admin</span></h2>
-                <Link className="text-decoration-none text-dark" to="/plan"><h5 className='mt-4 mb-3'>Add Package</h5></Link>
-                <Link className="text-decoration-none text-dark" to="/review"><h5>Review</h5></Link>
+                <Link className="text-decoration-none text-dark" to="/plan"><h5 className='mt-4 mb-3 package-add'>Add Package</h5></Link>
+                <Link className="text-decoration-none text-dark" to="/review"><h5 className='package-add'>Review Post</h5></Link>
             </div>
         </div>
     );

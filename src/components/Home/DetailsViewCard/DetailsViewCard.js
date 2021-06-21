@@ -1,8 +1,30 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const DetailsViewCard = (props) => {
+    const [userInfo, setUserInfo] = useContext(UserContext);
     const { company, adminPermission, details, id, skills, title, _id } = props.detail;
+    const history = useHistory();
 
+    const candidate = {
+        email : userInfo.email,
+        company: company,
+        title: title,
+        details: details,
+        skills: skills,
+    }
+
+    const handleSubmit = (data) => {
+        axios.post('http://localhost:5055/allApplication',data)
+        .then(res => {
+            if(res) {
+                alert('Congratulations! application successful');
+                history.push('/')
+            }
+        })
+    }
 
     return (
         <div>
@@ -21,7 +43,7 @@ const DetailsViewCard = (props) => {
                     <p>{details}</p>
                 </div>
                 <h6 className='mt-4'>Skill : <span className='text-primary'>{skills}</span></h6>
-                <button className='btn btn-outline-success px-3 mt-4'>Apply Now</button>
+                <button onClick={()=>handleSubmit(candidate)} className='btn btn-outline-success px-3 mt-4'>Apply Now</button>
             </div>
 
 

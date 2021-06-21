@@ -65,7 +65,7 @@ const CheckoutForm = (props) => {
           {
             paySuccess && setTimeout(() => {
               history.push(`/employer-profile/${paySuccess}`)
-            }, 4000)
+            }, 3000)
           }
         </div>
       }

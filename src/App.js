@@ -17,6 +17,7 @@ import AddJobPost from './components/Employer/AddJobPost/AddJobPost';
 import DetailsView from './components/Home/DetailsView/DetailsView';
 import Login from './components/login/Login/Login';
 import PrivateRoute from './components/login/PrivateRoute/PrivateRoute';
+import ViewAllApplication from './components/Admin/ViewAllApplication/ViewAllApplication';
 
 export const UserContext = createContext();
 
@@ -34,9 +35,9 @@ function App() {
           <Route path='/employer'>
             <Employer />
           </Route>
-          <Route path='/job-seeker'>
+          <PrivateRoute path='/job-seeker'>
             <Home />
-          </Route>
+          </PrivateRoute>
           <Route path='/admin'>
             <Admin />
           </Route>
@@ -63,6 +64,9 @@ function App() {
           </PrivateRoute>
           <Route path='/login'>
             <Login />
+          </Route>
+          <Route path='/view-application'>
+            <ViewAllApplication />
           </Route>
 
         </Switch>

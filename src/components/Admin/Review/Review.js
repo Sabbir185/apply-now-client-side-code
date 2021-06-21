@@ -12,7 +12,7 @@ const Review = () => {
     useEffect(() => {
         fetch('http://localhost:5055/jobViewAdmin')
             .then(res => res.json())
-            .then(data => setAllJob(data))
+            .then(data => setAllJob(data.reverse()))
     }, [])
 
 
@@ -22,7 +22,8 @@ const Review = () => {
             <div className="row">
                 <div className="col-3"> <Sidebar /> </div>
                 <div className="col mr-4">
-                    <Table striped bordered hover className="mt-5">
+                    <h6 className='mt-5 mb-3'> Find latest post at the <span className='text-success'>top</span> ! </h6>
+                    <Table striped bordered hover>
                         <thead>
                             <tr>
                                 <th>Company Name</th>
