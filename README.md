@@ -6,15 +6,15 @@
 ### Select your suitable package from Employer section and use your credit card for payment. Here for payment method, stripe payment method is used. And Complete your profile with email and password. Now post your job offer
 <br>
 
-# Job seeker
+## Job seeker
 ### You can view and apply job by using google login. You can filter your desire job.
 <br>
 
-# Admin
+## Admin
 ### Admin can accept or ignore job post and also can add new package for employer suitability.
 <br>
 
-# Technology :
+## Technology :
 ### JavaScript, ReactJs, NodeJs, ExpressJs, MongoDB
 ### Firebase, Heroku, Github, React-Bootstrap
 <br>
