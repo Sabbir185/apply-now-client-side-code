@@ -7,7 +7,7 @@ const Packages = () => {
     const [packData, setPackData] = useState([]);
 
     useEffect(()=>{
-        axios.get('http://localhost:5055/getPackages')
+        axios.get('https://limitless-caverns-42128.herokuapp.com/getPackages')
         .then(res => {
             setPackData(res.data)
         })

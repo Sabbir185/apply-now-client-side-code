@@ -21,7 +21,7 @@ const AddJobPost = () => {
             id: userInfo,
         }
 
-        axios.post('http://localhost:5055/jobPost',post)
+        axios.post('https://limitless-caverns-42128.herokuapp.com/jobPost',post)
         .then(res => {
             if(res){
                 alert('Posted! Please wait for admin review');

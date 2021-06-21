@@ -10,7 +10,7 @@ const Payment = () => {
     const [packData, setPackData] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5055/getPackInfo?hours=${hr}`)
+        fetch(`https://limitless-caverns-42128.herokuapp.com/getPackInfo?hours=${hr}`)
             .then(res => res.json())
             .then(data => setPackData(data))
             .catch(err => alert(err))

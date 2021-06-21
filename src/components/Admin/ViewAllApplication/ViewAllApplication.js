@@ -12,7 +12,7 @@ const ViewAllApplication = () => {
     const [view, setView] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:5055/allApplicationView')
+        axios.get('https://limitless-caverns-42128.herokuapp.com/allApplicationView')
         .then(res => setView(res.data))
     },[])
 

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = ({ id }) => {
     const [employer, setEmployer] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5055/getPayInfo?id=${id}`)
+        fetch(`https://limitless-caverns-42128.herokuapp.com/getPayInfo?id=${id}`)
         .then(res => res.json())
         .then(data => setEmployer(data))
         .catch(err => alert(err))

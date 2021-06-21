@@ -10,7 +10,7 @@ import JobPostList from '../JobPostList/JobPostList';
 const Review = () => {
     const [allJob, setAllJob] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/jobViewAdmin')
+        fetch('https://limitless-caverns-42128.herokuapp.com/jobViewAdmin')
             .then(res => res.json())
             .then(data => setAllJob(data.reverse()))
     }, [])

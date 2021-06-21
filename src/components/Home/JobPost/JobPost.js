@@ -8,14 +8,14 @@ const JobPost = () => {
     const [filterData, setFilterData] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5055/jobViewAdmin')
+        fetch('https://limitless-caverns-42128.herokuapp.com/jobViewAdmin')
             .then(res => res.json())
             .then(data => setPost(data.reverse()))
     }, [])
 
     const handleFilter = (e) => {
         const skill = e.target.value;
-        axios.get(`http://localhost:5055/filterJob?skill=${skill}`)
+        axios.get(`https://limitless-caverns-42128.herokuapp.com/filterJob?skill=${skill}`)
         .then(res => setFilterData(res.data))
     }
 

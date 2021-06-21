@@ -9,7 +9,7 @@ const JobPostList = (props) => {
         const admin = {
             adminPermission: true
         }
-        fetch(`http://localhost:5055/postPermission/${_id}`,{
+        fetch(`https://limitless-caverns-42128.herokuapp.com/postPermission/${_id}`,{
             method:'PATCH',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify(admin)

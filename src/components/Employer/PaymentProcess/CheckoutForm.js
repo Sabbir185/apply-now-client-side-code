@@ -47,7 +47,7 @@ const CheckoutForm = (props) => {
   // store data in mongodb
   const handleData = (dataPayment) => {
 
-    axios.post('http://localhost:5055/paymentStatus',dataPayment);
+    axios.post('https://limitless-caverns-42128.herokuapp.com/paymentStatus',dataPayment);
 
   }
 

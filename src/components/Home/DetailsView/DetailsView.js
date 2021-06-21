@@ -8,7 +8,7 @@ const DetailsView = () => {
     const [details, setDetails] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5055/viewDetails/${id}`)
+        fetch(`https://limitless-caverns-42128.herokuapp.com/viewDetails/${id}`)
             .then(res => res.json())
             .then(data => setDetails(data.reverse()))
     }, [id])

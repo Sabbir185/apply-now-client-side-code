@@ -10,7 +10,7 @@ const Profile = () => {
     const [payStatus, setPayStatus] = useState([]);
 
     useEffect(()=>{
-        fetch(`http://localhost:5055/getPayInfo?id=${payId}`)
+        fetch(`https://limitless-caverns-42128.herokuapp.com/getPayInfo?id=${payId}`)
         .then(res => res.json())
         .then(data => setPayStatus(data))
         .catch(err => alert(err))

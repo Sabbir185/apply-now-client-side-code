@@ -13,7 +13,7 @@ const SetProfileDetails = (props) => {
             email: data.email,
             password: data.password,
         }
-        fetch(`http://localhost:5055/updateSubmit?id=${id}`,{
+        fetch(`https://limitless-caverns-42128.herokuapp.com/updateSubmit?id=${id}`,{
             method:'PATCH',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify(employerProfile)

@@ -17,7 +17,7 @@ const DetailsViewCard = (props) => {
     }
 
     const handleSubmit = (data) => {
-        axios.post('http://localhost:5055/allApplication',data)
+        axios.post('https://limitless-caverns-42128.herokuapp.com/allApplication',data)
         .then(res => {
             if(res) {
                 alert('Congratulations! application successful');

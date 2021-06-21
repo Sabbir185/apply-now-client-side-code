@@ -17,7 +17,7 @@ const Plan = () => {
             plan: plan,
             cost: parseInt(cost)
         }
-        await axios.post('http://localhost:5055/plan', info)
+        await axios.post('https://limitless-caverns-42128.herokuapp.com/plan', info)
             .then(res => {
                 if (res) {
                     alert('Data insert successful!');
